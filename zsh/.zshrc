@@ -9,7 +9,7 @@ fi
 export PATH=/usr/local/opt/ruby/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/steffen/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,6 +77,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git nvm fzf colored-man-pages macOS)
 
+# https://stackoverflow.com/questions/62931101/i-have-multiple-files-of-zcompdump-why-do-i-have-multiple-files-of-these
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -104,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias v="/opt/homebrew/bin/nvim"
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
@@ -111,4 +115,6 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source .zshrc_custom
+if [[ -f .zshrc_local ]]; then 
+  source .zshrc_local
+fi
