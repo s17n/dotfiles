@@ -111,6 +111,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/opt/homebrew/bin:$PATH"
 
+alias h="history -E"
 alias vim="/opt/homebrew/bin/nvim"
 alias gs="git status"
 
