@@ -118,3 +118,4 @@ alias gs="git status"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
 [[ -f ~/.zettelkasten/config ]] && source ~/.zettelkasten/config
+[[ -f ~/.confluence/config ]] && source ~/.confluence/config
