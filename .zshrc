@@ -120,3 +120,4 @@ alias gs="git status"
 [[ -f ~/.zshrc_local ]] && source ~/.zshrc_local
 [[ -f ~/.zettelkasten/config ]] && source ~/.zettelkasten/config
 [[ -f ~/.confluence/config ]] && source ~/.confluence/config
+[[ -f ~/.cargo/env ]] && . "$HOME/.cargo/env"
