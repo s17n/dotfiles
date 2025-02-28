@@ -1012,6 +1012,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DisableTransparencyForKeyWindow</key>
+	<false/>
 	<key>EnableDivisionView</key>
 	<true/>
 	<key>ForceKeyboard</key>
@@ -3117,6 +3119,10 @@
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+	</array>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
